@@ -1,55 +1,67 @@
-# Sales Forecasting Using Time Series Analysis (Predictive Analytics)
+# **Sales Forecasting Using XGBoost (Predictive Analytics)**
 
-## Project Overview
-This project predicts future sales based on past trends using XGBoost. By analyzing historical sales data, businesses can optimize inventory, pricing, and marketing strategies for better decision-making.
+## **Project Overview**
 
-## Technologies Used
-- Python
-- XGBoost (for predictive modeling)
-- Pandas & NumPy (for data manipulation)
-- Scikit-Learn (for preprocessing & evaluation)
-- Matplotlib & Seaborn (for data visualization)
+This project aims to **predict future sales** using **XGBoost**, a powerful machine learning algorithm. By analyzing historical sales data, businesses can improve **inventory management, pricing strategies, and marketing decisions** to maximize revenue.
 
-## Project Structure
+## **Technologies Used**
+
+- **Python** (Data processing & modeling)
+- **XGBoost** (Predictive modeling)
+- **Pandas & NumPy** (Data manipulation)
+- **Scikit-Learn** (Preprocessing & evaluation)
+- **Matplotlib & Seaborn** (Data visualization)
+
+## **Project Structure**
+
 ```
 sales-forecasting-xgboost
 │-- sales_forecasting.ipynb   # Jupyter Notebook with model training & evaluation
-│-- supermarket_sales.csv    # Dataset
-│-- README.md                # Project documentation
-│-- requirements.txt         # Python dependencies
+│-- supermarket_sales.csv     # Dataset
+│-- README.md                 # Project documentation
+│-- requirements.txt          # Python dependencies
 ```
 
-## How to Run
+## **How to Run**
 
-1. Clone the Repository
-   ```
-   git clone https://github.com/<your-username>/sales-forecasting-xgboost.git
-   cd sales-forecasting-xgboost
-   ```
-2. Install Dependencies
-   ```
-   pip install -r requirements.txt
-   ```
-3. Open the Jupyter Notebook
-   ```
-   jupyter notebook sales_forecasting.ipynb
-   ```
+### **Clone the Repository**
 
-## Model Performance
+```bash
+git clone https://github.com/<your-username>/sales-forecasting-xgboost.git
+cd sales-forecasting-xgboost
+```
+
+### **Install Dependencies**
+
+```bash
+pip install -r requirements.txt
+```
+
+### **Open the Jupyter Notebook**
+
+```bash
+jupyter notebook sales_forecasting.ipynb
+```
+
+## **Model Performance**
+
 - **Best Model:** XGBoost Regressor
 - **Hyperparameter Tuning:** GridSearchCV used for optimization
 - **Evaluation Metrics:**
-  - Mean Absolute Error (MAE): 2.41
-  - Mean Squared Error (MSE): 13.98
-  - R² Score: 0.9998
+  - **Mean Absolute Error (MAE):** 9.83
+  - **Root Mean Squared Error (RMSE):** 253.9
+  - **R² Score:** 0.9964
 
-## Next Steps
-- Further optimize the XGBoost model with advanced hyperparameter tuning
-- Experiment with LSTM (Long Short-Term Memory) for time-series forecasting
-- Implement real-time sales prediction using a Flask API
+## **Next Steps**
 
-## License
-This project is open-source and available under the MIT License.
+- **Enhance feature engineering** to improve accuracy.
+- **Optimize hyperparameters** further using Bayesian Optimization.
+- **Experiment with deep learning models (LSTM, GRU)** for time-series forecasting.
+- **Deploy a real-time prediction system** using a Flask or FastAPI backend.
 
-Feel free to fork, contribute, or provide suggestions!
+## **License**
+
+This project is open-source and available under the **MIT License**.
+
+Feel free to **fork, contribute, or provide suggestions**!
 
